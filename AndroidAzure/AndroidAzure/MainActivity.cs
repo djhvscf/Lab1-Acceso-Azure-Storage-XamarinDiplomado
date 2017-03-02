@@ -24,7 +24,9 @@ namespace AndroidAzure
 			ImagenDrop = FindViewById<ImageView>
 				(Resource.Id.imagen);
 			btnImagen.Click += ArchivoImagen;
-		}
+            Startup startup = new Startup("NOMBRE", "CORREO", 1, 1);
+            startup.Init();
+        }
 		async void ArchivoImagen(object sender, EventArgs e)
 		{
             try
